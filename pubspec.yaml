@@ -1,0 +1,24 @@
+name: mobupay
+description: SDK Flutter Mobupay — présente la page de paiement hébergée (WebView in-app ou navigateur système) et interroge l'API Mobupay. Modèle redirect (agent eZyness).
+version: 0.2.0
+homepage: https://mobupay.nc
+repository: https://github.com/mobupay/mobupay-flutter
+
+environment:
+  # Testé avec Dart 3.10.1 / Flutter 3.x. Compatible Dart 3.x.
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.16.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # WebView native pour présenter la page hébergée DANS l'app (mode presentInApp).
+  webview_flutter: ^4.4.0
+  # Mode alternatif : ouvre la page dans le navigateur système
+  # (ASWebAuthenticationSession iOS / Chrome Custom Tabs Android), capte le retour
+  # via un schéma dédié. >=5 requis (les 3.x utilisent l'ancien embedding Registrar).
+  flutter_web_auth_2: ^5.0.0
+  http: ^1.2.0
+
+dev_dependencies:
+  flutter_lints: ^4.0.0

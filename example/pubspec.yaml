@@ -1,0 +1,17 @@
+name: mobupay_example
+description: Exemple minimal d'intégration du SDK Flutter Mobupay.
+publish_to: none
+version: 0.1.0
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  mobupay:
+    path: ../
+
+dev_dependencies:
+  flutter_lints: ^4.0.0
