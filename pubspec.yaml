@@ -3,6 +3,15 @@ description: SDK Flutter Mobupay — présente la page de paiement hébergée (W
 version: 0.2.0
 homepage: https://mobupay.nc
 repository: https://github.com/mobupay/mobupay-flutter
+issue_tracker: https://github.com/mobupay/mobupay-flutter/issues
+documentation: https://docs.mobupay.nc/guides/sdk-flutter
+
+# Découvrabilité pub.dev (max 5, [a-z0-9-]).
+topics:
+  - payments
+  - payment-gateway
+  - checkout
+  - webview
 
 environment:
   # Testé avec Dart 3.10.1 / Flutter 3.x. Compatible Dart 3.x.

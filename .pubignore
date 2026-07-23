@@ -1,0 +1,33 @@
+# Fichiers exclus du package pub.dev (`dart pub publish`).
+# NB : sans ce fichier, pub retombe sur .gitignore — mais le repo public
+# github.com/mobupay/mobupay-flutter est exporté SANS .gitignore (convention
+# publish-connector.sh) : ce .pubignore est donc la seule barrière côté package.
+
+# Artefacts de build / outils
+.dart_tool/
+build/
+pubspec.lock
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.idea/
+.gradle/
+.kotlin/
+*.iml
+
+# L'exemple embarqué dans le package se limite au code Dart (l'onglet Example de
+# pub.dev lit example/lib/main.dart) : les dossiers plateformes générés restent
+# dans le repo GitHub, pas dans le package.
+example/.dart_tool/
+example/build/
+example/pubspec.lock
+example/.flutter-plugins
+example/.flutter-plugins-dependencies
+example/android/
+example/ios/
+example/web/
+example/linux/
+example/macos/
+example/windows/
+example/test/
+example/.idea/
